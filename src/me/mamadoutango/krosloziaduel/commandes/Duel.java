@@ -56,14 +56,15 @@ public class Duel implements CommandExecutor {
                             DuelDataManager.addPlayerLastLocation(adversaire);
                             DuelDataManager.addHiddenPlayer(joueur);
                             DuelDataManager.addHiddenPlayer(adversaire);
-                            Iterator<Player> iterateur = DuelDataManager.getHiddenPlayer().iterator();
+                            DuelDataManager.updatePlayerVisibility();
+                            /*Iterator<Player> iterateur = DuelDataManager.getHiddenPlayer().iterator();
                             while(iterateur.hasNext()){
                                 Player joueurCacher = iterateur.next();
                                 if (joueurCacher != joueur && joueurCacher != adversaire){
                                     adversaire.hidePlayer(joueurCacher);
                                     joueur.hidePlayer(joueurCacher);
                                 }
-                            }
+                            }*/
                         } catch(NullPointerException e){
                             return true;
                         }

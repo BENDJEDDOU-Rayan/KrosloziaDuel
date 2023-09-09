@@ -4,6 +4,8 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class DuelDataManager {
 
@@ -72,6 +74,31 @@ public class DuelDataManager {
          }
     }
 
+    public static void updatePlayerVisibility() {
+
+        Iterator<Map.Entry<Player, Player>> iterator = DuelEnCours.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<Player, Player> entry = iterator.next();
+            Player joueur = entry.getKey();
+            Player adversaire = entry.getValue();
+
+            Player joueurSuivant = null;
+            Player adversaireSuivant = null;
+            if (iterator.hasNext()) {
+                Map.Entry<Player, Player> nextEntry = iterator.next();
+                joueurSuivant = nextEntry.getKey();
+                adversaireSuivant = nextEntry.getValue();
+                joueur.hidePlayer(joueurSuivant);
+                joueur.hidePlayer(adversaireSuivant);
+                adversaire.hidePlayer(joueurSuivant);
+                adversaire.hidePlayer(adversaireSuivant);
+            } else {
+                break;
+            }
+            // System.out.println("Clé : " + joueur + " Valeur : " + adversaire);
+            // System.out.println("Valeur suivante : " + joueurSuivant);
+        }
+    }
     public static void emptyTabVictoire(){
         tabVictoire.clear();
     }
