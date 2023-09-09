@@ -55,6 +55,12 @@ public class CommandsListener implements Listener {
             } else if(e.getMessage().equalsIgnoreCase("/repair")){
                 e.setCancelled(true);
                 e.getPlayer().sendMessage("§eKroslozia §7» §cVous ne pouvez pas exécuté la commande §e" + e.getMessage() + " &cpendant le duel !");
+            } else if(e.getMessage().equalsIgnoreCase("/rtp")){
+                e.setCancelled(true);
+                e.getPlayer().sendMessage("§eKroslozia §7» §cVous ne pouvez pas exécuté la commande §e" + e.getMessage() + " &cpendant le duel !");
+            } else if(e.getMessage().equalsIgnoreCase("/duel")){
+                e.setCancelled(true);
+                e.getPlayer().sendMessage("§eKroslozia §7» §cVous ne pouvez pas exécuté la commande §e" + e.getMessage() + " &cpendant le duel !");
             }
         }
     }
