@@ -2,11 +2,8 @@ package me.mamadoutango.krosloziaduel.manager;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
-import org.checkerframework.checker.units.qual.A;
-
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class DuelDataManager {
 
