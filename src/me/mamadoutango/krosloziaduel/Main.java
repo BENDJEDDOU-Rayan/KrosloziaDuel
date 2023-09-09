@@ -3,6 +3,7 @@ package me.mamadoutango.krosloziaduel;
 import me.mamadoutango.krosloziaduel.commandes.Duel;
 import me.mamadoutango.krosloziaduel.listeners.CommandsListener;
 import me.mamadoutango.krosloziaduel.listeners.DeathListener;
+import me.mamadoutango.krosloziaduel.manager.DuelDataManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -25,7 +26,6 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-
         System.out.println("Arrêt du plugin duel..");
     }
 

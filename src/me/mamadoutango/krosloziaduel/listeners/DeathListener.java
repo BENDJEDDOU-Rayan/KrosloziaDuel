@@ -113,14 +113,6 @@ public class DeathListener implements Listener {
                     adversaire.showPlayer(DuelDataManager.getHiddenPlayer().get(i));
                 }
             }
-            /*Iterator<Player> iterateur = DuelDataManager.getHiddenPlayer().iterator();
-            while(iterateur.hasNext()){
-                Player joueurCacher = iterateur.next();
-                if (joueurCacher != joueur && joueurCacher != adversaire){
-                    joueur.showPlayer(joueurCacher);
-                    adversaire.showPlayer(joueurCacher);
-                }
-            }*/
             // Suppresion du joueur de la HashMap PlayerInDuelEnCours
             DuelDataManager.removeHiddenPlayer(joueur);
             DuelDataManager.removeHiddenPlayer(adversaire);
@@ -155,15 +147,6 @@ public class DeathListener implements Listener {
                             adversaire.showPlayer(DuelDataManager.getHiddenPlayer().get(i));
                         }
                     }
-                    /*Iterator<Player> iterateur = DuelDataManager.getHiddenPlayer().iterator();
-                    while(iterateur.hasNext()){
-                        Player joueurCacher = iterateur.next();
-                        if (joueurCacher != joueur && joueurCacher != adversaire){
-                            joueur.showPlayer(joueurCacher);
-                            adversaire.showPlayer(joueurCacher);
-                        }
-                    }*/
-                    // Suppresion du joueur de la HashMap PlayerInDuelEnCours
                     DuelDataManager.removeHiddenPlayer(joueur);
                     DuelDataManager.removeHiddenPlayer(adversaire);
                     DuelDataManager.removePlayerInDuelEnCours(adversaire);

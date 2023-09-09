@@ -83,6 +83,14 @@ public class DuelDataManager {
         tabDefaite.clear();
     }
 
+    public static void emptyDuelEnCours() {
+        DuelEnCours.clear();
+    }
+    public static void emptyDuelEnAttente() {
+        DuelEnAttente.clear();
+    }
 
-
+    public static void emptyHiddenplayer() {
+        hiddenPlayer.clear();
+    }
 }
