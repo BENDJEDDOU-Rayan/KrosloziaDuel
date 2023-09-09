@@ -1,0 +1,7 @@
+name: KrosloziaDuel
+version: 1.0
+author: MamadouTango
+main: me.mamadoutango.krosloziaduel.Main
+commands:
+  duel:
+    description: Envoyer une demande de duel.

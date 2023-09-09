@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="KrosloziaDuel:jar">
+    <output-path>$PROJECT_DIR$/../../Kroslozia/Serveur/plugins</output-path>
+    <root id="archive" name="KrosloziaDuel.jar">
+      <element id="module-output" name="KrosloziaDuel" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Plugin Kroslozia/spigot.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>
